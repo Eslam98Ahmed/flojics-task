@@ -1,1 +1,1 @@
-1- create project and the repo
+1- create angular project and the repo
