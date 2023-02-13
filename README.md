@@ -1,1 +1,1 @@
-# flojics-task
+1- create project and the repo
