@@ -4,7 +4,7 @@
     display: flex ;
     justify-content: space-around;
     padding-top:23px ;
-    padding-bottom:23px ;
+    padding-bottom:13px ;
 }
 .navbar-collapse{
     width: 75%;
