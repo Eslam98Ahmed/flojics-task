@@ -1,0 +1,79 @@
+.header {
+    background-image: url('../../assets/bookedHotel.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 35vh;
+}
+
+.header-layout {
+    background-color: rgba(0, 0, 0, 0.568);
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-contan {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 30px 0px;
+    padding-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.form-contan label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.form-contan input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+.form-contan input:focus {
+    outline: none !important;
+}
+
+.action-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit-btn{
+    width: 50%;
+    color: white;
+    background-color: #777;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin-top: 30px;
+    margin-right: 25px;
+    cursor: pointer;  
+}
+.submit-btn:hover{
+    background-color: white;
+    color: #777;
+
+}

@@ -1,0 +1,27 @@
+<section>
+    <div class="section-details">
+        <h1 class="section-title">Explore our top unique hotels</h1>
+        <p class="section-description">From castles and villas to boats and igloos, we've got it all</p>
+    </div>
+    <div class="hotels-list">
+        <div class="hotel-details" *ngFor="let hotel of hotels , let i = index">
+            <div class="hotel-img">
+                <img [src]="hotel.img">
+            </div>
+            <div class="hotel-description">
+                <h3 class="hotel-name">{{hotel.name}}</h3>
+                <div class="action">
+                    <p class="hotel-adress">{{hotel.adress}}</p>
+                    <button class="booking-btn" (click)="bookingHotel(hotel,i)">Book Now</button>
+                </div>
+            </div>
+            <div class="hotal-rate" [ngStyle]="
+            {
+                'backgroundColor':hotel.isBook == true ?'green':'white',
+                'color':hotel.isBook == true ?'white':''
+            }">
+                <p>{{hotel.rate}}</p>
+            </div>
+        </div>
+    </div>
+</section>

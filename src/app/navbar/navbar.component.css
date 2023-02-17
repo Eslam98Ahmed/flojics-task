@@ -26,3 +26,18 @@
 .item-link:hover{
     color: #009DFF;
 }
+.booking-btn{
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+.booking-btn:hover{
+    background-color: white;
+    color:#777 ;
+    border: 1px solid #777;
+   
+}
