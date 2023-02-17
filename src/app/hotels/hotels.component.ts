@@ -22,10 +22,17 @@ export class HotelsComponent {
  
 
   bookingHotel(hotel:any , index:number){
-    if(this.HotelsService.bookedHotel.length!=0){
+    if(this.HotelsService.bookedHotel.length==0){
+      this.HotelsService.bookedHotel.push(hotel)
+        this.HotelsService.hotelsList[index].isBook = true
+        this.Router.navigate(['/bookForm'])
+        console.log(this.HotelsService.bookedHotel);
+    }
+    else if(this.HotelsService.bookedHotel.length!=0){
       this.HotelsService.bookedHotel.forEach(element => {
         if(element.id == hotel.id){
           window.alert("you already Make Reservation")
+          this.Router.navigate(['/home'])
         }else{
         this.HotelsService.bookedHotel.push(hotel)
         this.HotelsService.hotelsList[index].isBook = true
@@ -33,11 +40,6 @@ export class HotelsComponent {
         console.log(this.HotelsService.bookedHotel);
         }
         });
-    }else{
-      this.HotelsService.bookedHotel.push(hotel)
-        this.HotelsService.hotelsList[index].isBook = true
-        this.Router.navigate(['/bookForm'])
-        console.log(this.HotelsService.bookedHotel);
     }
   
   }

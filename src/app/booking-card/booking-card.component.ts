@@ -15,7 +15,6 @@ export class BookingCardComponent {
   }
   cancelBooking(hotel:any ,index:number){
     this.bookedHotel.splice(index,1)
-    this.HotelsService.bookedHotel.splice(index,1)
     this.HotelsService.hotelsList.forEach(element => {
       if(element.id == hotel.id){
         element.isBook = false
