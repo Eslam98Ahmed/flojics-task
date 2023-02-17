@@ -1,20 +1,23 @@
-.final-message{
+.final-message {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-top: 50px;
 }
+
 .final-message img {
     width: 25%;
 }
-.message{
+
+.message {
     font-size: 1.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #777;
     padding-top: 10px;
 }
-.back-btn{
+
+.back-btn {
     color: white;
     background-color: #777;
     font-size: 1rem;
@@ -24,10 +27,10 @@
     border-radius: 5px;
     padding: 10px 30px;
     margin-top: 20px;
-    cursor: pointer;  
+    cursor: pointer;
 }
-.back-btn:hover{
+
+.back-btn:hover {
     background-color: white;
     color: #777;
-
 }

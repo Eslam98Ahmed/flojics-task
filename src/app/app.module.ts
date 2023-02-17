@@ -9,6 +9,7 @@ import { HotelsComponent } from './hotels/hotels.component';
 import { HomeComponent } from './home/home.component';
 import { BookFormComponent } from './book-form/book-form.component';
 import { FinalMessageComponent } from './final-message/final-message.component';
+import { BookingCardComponent } from './booking-card/booking-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FinalMessageComponent } from './final-message/final-message.component';
     HotelsComponent,
     HomeComponent,
     BookFormComponent,
-    FinalMessageComponent
+    FinalMessageComponent,
+    BookingCardComponent
   ],
   imports: [
     BrowserModule,

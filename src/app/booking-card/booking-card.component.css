@@ -1,0 +1,84 @@
+.header {
+    background-image: url('../../assets/bookedHotel.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 35vh;
+}
+
+.header-layout {
+    background-color: rgba(0, 0, 0, 0.568);
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+.card-contant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+table{
+    width: 90%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border: 1px solid #777;
+    margin: 0;
+    padding: 0;
+}
+.table-head{
+    background-color: #777;
+    color: white;
+
+}
+.table-head th {
+    width: 25%;
+    padding: 10px 0px;
+}
+.prod-details{
+    font-size: 1.5rem;
+    color: #777;
+    border-bottom: 1px solid #777 ;
+}
+.prod-details img{
+    width: 50%;
+    text-align: start;
+}
+.cancel-btn{
+    color: white;
+    background-color: #777;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    cursor: pointer;  
+}
+.cancel-btn:hover {
+    background-color: white;
+    color: #777;
+}
+.card-empty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+.emptyImg{
+    width: 25%;
+}
+.empty-message{
+    color: #777;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    padding-top: 10px;
+}

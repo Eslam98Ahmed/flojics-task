@@ -1,0 +1,36 @@
+<div class="booking-card">
+    <div class="header">
+        <div class="header-layout">
+            <h1>Booking Card</h1>
+        </div>
+    </div>
+
+    <div class="card-contant" *ngIf="bookedHotel.length!=0">
+        <table class="table">
+            <thead class="table-head">
+                <tr>
+                    <th scope="col">Hotel</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Adress</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="prod-details" *ngFor="let hotel of bookedHotel , let index = index">
+                    <td>
+                        <div>
+                            <img [src]="hotel.img">
+                        </div>
+                    </td>
+                    <td>{{hotel.name}}</td>
+                    <td>{{hotel.adress}}</td>
+                    <td><button class="cancel-btn" (click)="cancelBooking(hotel,index)" >cancel Reservation</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card-empty" *ngIf="bookedHotel.length==0">
+        <img src="assets/emptCard.jpg" class="emptyImg">
+        <p class="empty-message">You Not Make Any Reservation </p>
+    </div>
+</div>
